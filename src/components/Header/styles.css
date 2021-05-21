@@ -1,0 +1,368 @@
+.main-header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid rgba(48,51,58,.1);
+    font-family: rv-font1,Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    color: #444c59;
+    font-weight: 400;
+}
+
+.hide {
+    display: none!important;
+}
+
+.main-header .col-left .top-search form .search-type::after {
+    margin-left: 4px;
+    content: '\f2f9';
+    font-family: Material-Design-Iconic-Font;
+    color: #c72628;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main-header .col-left {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.main-header .col-left .logo-large {
+    display: block;
+}
+
+.main-header .col-left .logo-large>a {
+    display: block;
+    position: relative;
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+}
+
+a {
+    color: #303330;
+    text-decoration: none;
+}
+
+.main-header .col-left .logo-large>a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.main-header .col-left .top-search {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 14px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid rgba(48,51,58,.3);
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+}
+
+.main-header .col-left .top-search>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: none;
+}
+
+.main-header .col-left .top-search form {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-header .col-left .top-search form .search-type {
+    padding: 0 10px;
+    height: 20px;
+    width: 100%;
+    max-width: fit-content;
+    border-right: 1px solid rgba(48,51,58,.3);
+    line-height: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.main-header .col-left .top-search form .zmdi {
+    margin-left: 10px;
+    padding: 0;
+    font-size: 20px;
+    color: rgba(0,4,68,.3);
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.main-header .col-left .top-search form .search-type-mobile {
+    display: none;
+    height: 100%;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 46px;
+    color: #30333a;
+}
+
+.main-header .col-left .top-search form input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1px 10px 0;
+    -webkit-appearance: none;
+    overflow: hidden;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.main-header .col-right {
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-header .col-right .top-menu ul {
+    white-space: nowrap;
+}
+
+.main-header .col-right .top-menu ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-header .col-right .top-menu ul li a {
+    display: block;
+    font-size: 14px;
+    color: #30333a;
+    font-weight: 500;
+}
+
+.main-header .col-right .top-menu ul li:not(.sub-menu) a .zmdi {
+    padding: 0 4px 1px 0;
+    color: #30333a;
+    line-height: 15px;
+}
+
+.main-header .col-right .top-menu ul li a .zmdi {
+    padding: 0 0 0 5px;
+    color: #c72628;
+    vertical-align: text-bottom;
+    font-size: 14px;
+}
+
+.main-header .col-right .top-menu ul .sub-menu ul li {
+    display: block;
+    height: 35px;
+    padding: 0 25px;
+    margin: 0;
+    white-space: nowrap;
+    line-height: 35px;
+    text-align: left;
+}
+
+.main-header .col-right .top-menu ul .sub-menu ul {
+    position: absolute;
+    top: 59px;
+    right: 0;
+    padding: 10px 0;
+    z-index: 100;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(131,131,131,.2);
+    opacity: 0;
+    -webkit-transition: .1s ease all;
+    transition: .1s ease all;
+    visibility: hidden;
+    -webkit-box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.main-header .col-right .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.btn-login {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    border: 0;
+    padding: 0 20px;
+    background: 0 0;
+    white-space: nowrap;
+}
+
+.main-header .col-right .top-menu ul li a .zmdi {
+    padding: 0 0 0 5px;
+    color: #c72628;
+    vertical-align: text-bottom;
+    font-size: 14px;
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: 18px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.agency-rever a {
+    color: #30333a;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 500;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0 20px;
+    white-space: nowrap;
+    outline: unset;
+    border: 1px solid #30333a;
+    min-width: 155px;
+}
+
+.main-header .col-right .top-menu ul li .menu-humber {
+    display: none;
+}
+
+.main-header .col-right .top-menu ul .sub-menu ul li a {
+    font-weight: 400!important;
+}
+
+.main-header .col-right .top-menu ul li a {
+    display: block;
+    font-size: 14px;
+    color: #30333a;
+    font-weight: 500;
+}
+
+.main-header .col-left .top-search form .zmdi {
+    margin-left: 10px;
+    padding: 0;
+    font-size: 20px;
+    color: rgba(0,4,68,.3);
+}
+
+.zmdi-search:before {
+    content: '\f1c3';
+}
+
+.main-header .col-right .top-menu ul .sub-menu::before {
+    position: absolute;
+    right: 20px;
+    top: 44px;
+    bottom: 100%;
+    content: ' ';
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-width: 8px;
+    pointer-events: none;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 101;
+}
